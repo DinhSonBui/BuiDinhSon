@@ -4,9 +4,525 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bùi Đình Sơn</title>
+    <!--=============== LINE ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
+    <!--=============== FONT-AWESOME ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!--=============== SWEET ALERT ===============-->
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+
+    <title>Bui Dinh Son</title>
   </head>
   <body>
-    Welcome , My name is Armstrong Bui!
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <!-- nav -->
+      <nav class="nav container padd-15">
+        <!---nav-logo-->
+        <a href="" class="nav-logo">
+          <h2>Armstrong</h2>
+        </a>
+        <!--nav menu-->
+        <div class="nav-menu" >
+          <!--nav-list-->
+          <ul class="nav-list" id="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="sectionHome active-link nav-link">Home</a>
+            </li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <div class="nav-close" id="nav-close">
+              <i class="lni lni-close"></i>
+            </div>
+          </ul>
+          
+        </div>
+        <!--nav-button-->
+        <div class="nav-btns">
+          <!--setting change button-->
+          <i class="fa-solid fa-gear change-theme" id="theme-button"></i>
+          <!--toggle btn-->
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="lni lni-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+      <!--nav-menu-->
+      <div class="nav-menu" id="nav-menu"></div>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main-content">
+      <!--=============== HOME ===============-->
+      <session class="home" id="home">
+        <div class="container">
+          <!--intro-->
+          <div class="intro">
+            <!-- avatar image-->
+            <img src="/assets/img/avatar-1.svg" alt="" />
+            <!-- info-->
+            <svg viewBox="0 0 1350 300">
+              <text x="50%" y="70%" fill="transparent" text-anchor="middle">
+                Armstrong Bui
+              </text>
+           </svg>
+            <span
+              >I'm a <span class="info-text">developer and youtuber</span></span
+            >
+            <!-- social icon -->
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100025944246300"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/DinhSonBui"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCgAbHL4DuJqNJqZryJBId6A"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-basketball"></i></a>
+              </li>
+            </ul>
+            <!-- button-->
+            <div >
+              <a href="#"  class="button-anon-pen" ><span>Welcome <i id="icon-play" class="fa-solid fa-volume-high"></i> </span></a>
+              <audio id="mySong">
+                <source src="assets/img/myAudio.mp3" type="audio/mp3">|
+            </audio> 
+            </div>
+            <!--Scroll down mouse-->
+            <div class="scroll-down">
+              <a href="" class="mouse-wrapper">
+                <span>Scroll Down</span>
+                <span class="mouse">
+                  <span class="wheel">
+
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </session>
+      <!--=============== About ===============-->
+      <section class="about" id="about">
+        <div class="container">
+          <!---Section title-->
+          <h2 class="section-title padd-15">
+            About Me
+          </h2>
+          <div class="row ">
+            <div class="about-img padd-15">
+              <img src="/assets/img/avatar-2.svg" alt="">
+            </div>
+            <div class="about-content padd-15">
+              <div class="rounded">
+                <div class="row">
+                  <div class="about-text padd-15">
+                    <p>My name is Armstrong Bui. I am from Hai Phong city and live Ha Noi capital. I am a boy of twenty-one. I am a student of information technology at the electric power university. In the future i want to be a professional programmer.</p>
+                    <div>
+                      <a href="#" class="btn btn-default">Download CV</a>
+                    </div>
+                  </div>
+                  <div class="skills padd-15">
+                    <div class="row">
+                      <div class="skill-item">
+                        <div class="skill-name">HTML</div>
+                        <div class="skill-bar">
+                          <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-bar">
+                          <div class="skill-per" per="70%" style="max-width: 70%"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar">
+                          <div class="skill-per" per="50%" style="max-width: 50%"></div>
+                        </div>
+                      </div>
+                      </div>  
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--=============== Services ===============-->
+      <section class="section services" id="services">
+        <div class="container">
+          <!---Section title-->
+          <h2 class="section-title padd-15">
+            Services 
+          </h2>
+          <div class="row">
+            <!---Service item-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner" style="background-color: rgb(108,108,229);">
+                <img src="/assets/img/service-1.svg" alt="">
+                <h3>UI/UX Design</h3>
+                <p>Design logos, banners, edit videos with photoshop, canva, camtasia .. </p>
+              </div>
+            </div>
+            <div class="service-item padd-15">
+              <div class="service-item-inner" style="background-color: rgb(249,215,76);">
+                <img src="/assets/img/service-2.svg" alt="">
+                <h3>Web development</h3>
+                <p>Design landing pages, website using html, css, js, php,.net,... </p>
+              </div>
+            </div>
+            <div class="service-item padd-15">
+              <div class="service-item-inner" style="background-color: rgb(249,123,139);">
+                <img src="/assets/img/service-3.svg" alt="">
+                <h3>App development</h3>
+                <p>Design application desktop with c#, java, swing, windown form, ... </p>
+              </div>
+            </div>
+          </div>
+          <div class="text padd-15">
+            <p>Looking for a custom job? Please,<a href=""> click here</a> to contact me! 👏</p>
+          </div>
+        </div>
+      </section>
+      <!--=============== Experience ===============-->
+      <section class="section" id="experience">
+        <div class="container">
+           <!---Section title-->
+           <h2 class="section-title padd-15">
+            Experience 
+          </h2>
+          <div class="row">
+            <!--Education-->
+            <div class="education padd-15">
+              <div class="row">
+                <div class="timeline-box">
+                  <div class="timeline">
+                    <!--Timeline item-->
+                    <div class="timeline-item">
+                        <i class="lni lni-graduation timeline-icon"></i>
+                          <h3 class="timeline-date">
+                            <i class="lni lni-calendar"></i> 03/2021 - present
+                          </h3>
+                          <h3 class="timeline-title">F8 Course</h3>
+                          <p class="timeline-text">
+                            This is a website to learn web programming, chosen by many people in Vietnam
+                          </p>
+                    </div>
+                    <!--Timeline item-->
+                    <div class="timeline-item">
+                      <i class="lni lni-graduation timeline-icon"></i>
+                        <h3 class="timeline-date">
+                          <i class="lni lni-calendar"></i> 08/2019 - present
+                        </h3>
+                        <h3 class="timeline-title">Electric Power University</h3>
+                        <p class="timeline-text">
+                          I majored in Information Technology at Hanoi Electric Power University
+                        </p>
+                  </div>
+                  <!--Timeline item-->
+                  <div class="timeline-item">
+                    <i class="lni lni-graduation timeline-icon"></i>
+                      <h3 class="timeline-date">
+                        <i class="lni lni-calendar"></i> 08/2016 - 06/2019
+                      </h3>
+                      <h3 class="timeline-title">An Lao High School</h3>
+                      <p class="timeline-text">
+                        I studied 3 years of my high school at An Lao high school, a school in Hai Phong city
+                      </p>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Experience-->
+            <div class="experience padd-15">
+              <div class="row">
+                <div class="timeline-box">
+                  <div class="timeline">
+                    <!--Timeline item-->
+                    <div class="timeline-item">
+                          <i class="lni lni-briefcase timeline-icon"></i>
+                          <h3 class="timeline-date">
+                            <i class="lni lni-calendar"></i> 2019 - present
+                          </h3>
+                          <h3 class="timeline-title">Academic Degree</h3>
+                          <p class="timeline-text">
+                            Lorem ipsum dolor sit amet quo ei simul congue exprci ad nec admodum perfecto.
+                          </p>
+                    </div>
+                    <!--Timeline item-->
+                    <div class="timeline-item">
+                      <i class="lni lni-briefcase timeline-icon"></i>
+                        <h3 class="timeline-date">
+                          <i class="lni lni-calendar"></i> 2019 - present
+                        </h3>
+                        <h3 class="timeline-title">Academic Degree</h3>
+                        <p class="timeline-text">
+                          Lorem ipsum dolor sit amet quo ei simul congue exprci ad nec admodum perfecto.
+                        </p>
+                  </div>
+                  <!--Timeline item-->
+                  <div class="timeline-item">
+                    <i class="lni lni-briefcase timeline-icon"></i>
+                      <h3 class="timeline-date">
+                        <i class="lni lni-calendar"></i> 2019 - present
+                      </h3>
+                      <h3 class="timeline-title">Academic Degree</h3>
+                      <p class="timeline-text">
+                        Lorem ipsum dolor sit amet quo ei simul congue exprci ad nec admodum perfecto.
+                      </p>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--=============== Portfolio ===============-->
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="section-title padd-15">
+            Portfolio 
+          </h2>
+          <div class="row">
+            <div class="portfolio-filter padd-15">
+              <div class="portfolio-filter-inner">
+                <button type="button" class="active" data-filter="all">Everything</button>
+                <button type="button" data-filter="web">Websites</button>
+                <button type="button" data-filter="app">Applications</button>
+                <button type="button" data-filter="photo">Banners, Logos</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- portfolio item -->
+            <div class="portfolio-item padd-15" data-category="web">
+              <div class="portfolio-item-inner">
+                    <div class="portfol io-item-thumbnail">
+                        <img src="assets/img/1.svg" alt="">
+                        <div class="mask"></div>
+                    </div>
+                    <span class="term">Art, design</span>
+                    <h3 class="portfolio-item-title">Project Management Illustration</h3>
+                    <span class="more-button">&hellip;</span>
+              </div>
+            </div>
+            <!-- portfolio item -->
+            <div class="portfolio-item padd-15" data-category="app">
+              <div class="portfolio-item-inner">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="assets/img/2.svg" alt="">
+                        <div class="mask"></div>
+                    </div>
+                    <span class="term">Art, design</span>
+                    <h3 class="portfolio-item-title">Project Management Illustration</h3>
+                    <span class="more-button">&hellip;</span>
+              </div>
+            </div>
+            <!-- portfolio item -->
+            <div class="portfolio-item padd-15" data-category="photo">
+              <div class="portfolio-item-inner">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="assets/img/3.svg" alt="">
+                        <div class="mask"></div>
+                    </div>
+                    <span class="term">Art, design</span>
+                    <h3 class="portfolio-item-title">Project Management Illustration</h3>
+                    <span class="more-button">&hellip;</span>
+              </div>
+            </div>
+            <!-- portfolio item -->
+            <div class="portfolio-item padd-15" data-category="web">
+              <div class="portfolio-item-inner">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="assets/img/4.svg" alt="">
+                        <div class="mask"></div>
+                    </div>
+                    <span class="term">Art, design</span>
+                    <h3 class="portfolio-item-title">Project Management Illustration</h3>
+                    <span class="more-button">&hellip;</span>
+              </div>
+            </div>
+            <!-- portfolio item -->
+            <div class="portfolio-item padd-15" data-category="web">
+              <div class="portfolio-item-inner">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="assets/img/5.svg" alt="">
+                        <div class="mask"></div>
+                    </div>
+                    <span class="term">Art, design</span>
+                    <h3 class="portfolio-item-title">Project Management Illustration</h3>
+                    <span class="more-button">&hellip;</span>
+              </div>
+            </div>
+            <!-- portfolio item -->
+            <div class="portfolio-item padd-15" data-category="photo">
+              <div class="portfolio-item-inner">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="assets/img/6.svg" alt="">
+                        <div class="mask"></div>
+                    </div>
+                    <span class="term">Art, design</span>
+                    <h3 class="portfolio-item-title">Project Management Illustration</h3>
+                    <span class="more-button">&hellip;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--=============== Contact ===============-->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <h2 class="section-title padd-15">
+            Contact Me
+          </h2>
+          <div class="row">
+            <!--Contact box-->
+            <div class="contact-box padd-15">
+              <div class="contact-data">
+                <div class="contact-information">
+                  <h3 class="contact-subtitle">Call me for instant support</h3>
+                  <span class="contact-description">
+                    <a href="tel:0397967585">
+                      <i class="lni lni-phone contact-icon"></i>
+                      +84 0397967585
+                    </a>
+                  </span>
+                </div>
+                <div class="contact-information">
+                  <h3 class="contact-subtitle">Write me by email</h3>
+                  <span class="contact-description">
+                    <a href="mailto:buidinhson1209@gmail.com">
+                      <i class="lni lni-user contact-icon"></i>
+                      buidinhson1209@gmail.com
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!--Contact form-->
+            <form action="" class="contact-form padd-15">
+              <div class="contact-inputs">
+                <!--Contact content-->
+                <div class="contact-content">
+                  <input type="email" name="" id="" class="contact-input">
+                  <label for="" class="contact-label">Email</label>
+                  <span></span>
+                </div>
+                <!--Contact content-->
+                <div class="contact-content">
+                  <input type="text" name="" id="" class="contact-input">
+                  <label for="" class="contact-label">Subject</label>
+                  <span></span>
+                </div>
+                <!--Contact content-->
+                <div class="contact-content contact-area">
+                  <textarea name="" id="" cols="30" rows="10" class="contact-input"></textarea>
+                  <label for="" class="contact-label">Message</label>
+                  <span></span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-default">Send Message</a>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--=============== Footer ===============-->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-text padd-15">
+            <p>&copy; BuiDinhSon</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!--=============== Theme Customize ===============-->
+    <div class="customize-theme">
+      <div class="card">
+        <h2>Customize view</h2>
+        <p>Manage your font size, color, and background</p>
+        <!--Font size-->
+        <div class="font-size">
+          <h3>Font Size</h3>
+          <div>
+            <h6>Aa</h6>
+            <div class="choose-size">
+              <span class="font-size-1"></span>
+              <span class="font-size-2"></span>
+              <span class="font-size-3 active"></span>
+              <span class="font-size-4"></span>
+            </div>
+            <h3>Aa</h3>
+          </div>
+        </div>
+        <!--Color-->
+        <div class="color">
+          <h3>Color</h3>
+          <div>
+            <div class="choose-color">
+              <span class="color-1"></span>
+              <span class="color-2"></span>
+              <span class="color-3 active"></span>
+              <span class="color-4"></span>
+              <span class="color-5"></span>
+            </div>
+          </div>
+        </div>
+        <!--Background-->
+        <div class="background">
+          <h3>Background</h3>
+          <div>
+            <div class="choose-bg">
+              <div class="bg-1 active">
+                <span></span>
+                <h5 for="bg-1">Light</h5>
+              </div>
+              <div class="bg-2">
+                <span></span>
+                <h5 for="bg-2">Dim</h5>
+              </div>
+              <div class="bg-3">
+                <span></span>
+                <h5 for="bg-3">Dark</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--===============SCROLL REVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!--=============== LORDICON ICON ===============-->
+    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+     <!--=============== SWEET ALERT ===============-->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
