@@ -472,6 +472,7 @@ header {
 }
 .avatar:hover .content img{
   opacity: 0;
+  display: none;
 }
 
 .avatar .content a{
@@ -483,7 +484,6 @@ header {
   font-size: 18px;
   color:var(--color-primary);
   cursor: pointer;
-
 }
 
 
