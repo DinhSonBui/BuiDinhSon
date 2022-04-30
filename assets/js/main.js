@@ -1,4 +1,3 @@
-
 /*=============== CLICK AUDIO ===============*/
 var mySong = document.getElementById("mySong"); 
 var icon = document.getElementById ("icon-play");
