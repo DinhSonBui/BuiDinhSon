@@ -355,7 +355,21 @@ header {
 .home .intro .social-icons a {
   font-size: var(--h3-font-size);
 }
-
+.home .intro .social-icons i{
+   width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color:var(--color-dark);
+    cursor: pointer;
+    box-shadow: -3px -3px 5px 0px var(--color-light),
+                3px 3px 5px 0px var(--color-dark);
+}
+.home .intro .social-icons i:hover{
+  box-shadow: -3px -3px 5px 0px #ffffffa6 inset,
+                3px 3px 5px 0px #0000004a inset;
+}
 .scroll-down {
   position: absolute;
   bottom: var(--m-2-5);
